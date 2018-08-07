@@ -36,6 +36,7 @@ public class SessionFactoryConfiguration {
 		SqlSessionFactoryBean sqlSessionFactoryBean =new SqlSessionFactoryBean();
 		//mybatis配置文件
 		sqlSessionFactoryBean.setConfigLocation(new ClassPathResource(mybatisConfigFilePath));
+		
 		PathMatchingResourcePatternResolver resoulver = new PathMatchingResourcePatternResolver();
 		//映射文件
 		String packageSearchPath = PathMatchingResourcePatternResolver.CLASSPATH_ALL_URL_PREFIX + mapperPath;

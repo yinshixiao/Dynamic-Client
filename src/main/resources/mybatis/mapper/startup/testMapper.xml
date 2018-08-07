@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper
+	namespace="com.vh.dc.module.startup.dao.InitSystemDateDao">
+	<select id="createUserTable">
+		create table sys_user(
+			id bigint primary key identity(1,1),
+			user_code varchar(32),
+			user_name nvarchar(32),
+			password varchar(32)
+		);
+	</select>
+</mapper>
